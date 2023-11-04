@@ -245,26 +245,7 @@ minecraft() {
 
 # Check for eula.txt and generate if necessary
 eula() {
-  echo ""
-  if [[ ! -s "eula.txt" ]]; then
-
-    echo "Mojang's EULA has not yet been accepted. In order to run a Minecraft server, you must accept Mojang's EULA."
-    echo "Mojang's EULA is available to read at https://aka.ms/MinecraftEULA"
-    echo "If you agree to Mojang's EULA then type 'I agree'"
-    echo -n "Response: "
-    read -r ANSWER
-
-    if [[ "${ANSWER}" == "I agree" ]]; then
-      echo "User agreed to Mojang's EULA."
-      echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://aka.ms/MinecraftEULA)." >eula.txt
-      echo "eula=true" >>eula.txt
-    else
-      echo "User did not agree to Mojang's EULA."
-      echo "Entered: ${ANSWER}"
-      crash
-    fi
-
-  fi
+  echo "eula=true" >>eula.txt
 }
 
 # Main
@@ -312,6 +293,7 @@ fi
 checkJavaBitness
 minecraft
 eula
+
 
 echo ""
 echo "Starting server..."
