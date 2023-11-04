@@ -1,0 +1,20 @@
+{
+	"respec": {
+		"title": "20 Respecs - Use them wisely - '/reload' afterwards!",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "darkness"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"command": "puffish_skills skills reset @s prom"
+				}
+			}
+		],
+		"editor-color": "#474ab8"
+	}
+}

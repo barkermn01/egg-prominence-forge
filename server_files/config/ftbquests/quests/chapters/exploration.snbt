@@ -1,0 +1,76 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "exploration"
+	group: "3E586F2160161EEA"
+	icon: "minecraft:filled_map"
+	id: "1734C156F46CD8A9"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 1.0d
+		hover: [ ]
+		image: "prominent:textures/text/looting.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.988095238095241d
+		y: -0.702380952380949d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1694F8F91DDCCFA0"
+			size: 1.25d
+			subtitle: "Loot a chest"
+			tasks: [{
+				icon: "lootr:lootr_chest"
+				id: "1BD855C373FFAB60"
+				stat: "lootr:looted_stat"
+				title: "Loot a chest!"
+				type: "stat"
+				value: 1
+			}]
+			title: "&eIs this yours...?"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1694F8F91DDCCFA0"]
+			icon: "lootr:lootr_barrel"
+			id: "5DA1E337C44EA538"
+			rewards: [
+				{
+					id: "746AE8280638610D"
+					item: {
+						Count: 1b
+						id: "bewitchment:besmirched_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6477121808D22E9B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			subtitle: "Loot &e100 &rchests"
+			tasks: [{
+				icon: "lootr:lootr_chest"
+				id: "6A23F14163D90F9E"
+				stat: "lootr:looted_stat"
+				title: "Loot 100 chests"
+				type: "stat"
+				value: 100
+			}]
+			title: "&eMaster Thief"
+			x: 3.5d
+			y: 0.0d
+		}
+	]
+	title: " &2&nExplorer's Journal"
+}

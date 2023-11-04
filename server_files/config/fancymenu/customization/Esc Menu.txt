@@ -1,0 +1,241 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_433
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  orientation = mid-centered
+  x = 3
+  action = movebutton
+  y = -75
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  width = 99
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_feedback_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = 41
+}
+
+customization {
+  identifier = %id=504306%
+  orientation = bottom-right
+  x = -75
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=504306%
+  width = 70
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=606306%
+  orientation = mid-centered
+  x = -126
+  action = movebutton
+  y = -9
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  orientation = mid-centered
+  x = 3
+  action = movebutton
+  y = -9
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  width = 99
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = mid-centered
+  x = -103
+  action = movebutton
+  y = 16
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  width = 102
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  orientation = mid-centered
+  x = 3
+  action = movebutton
+  y = 16
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  width = 99
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  orientation = bottom-left
+  x = 6
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  width = 70
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  action = setbuttonlabel
+  value = Share World
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  action = sethoverlabel
+  label = Experimental!
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  action = setbuttondescription
+  description = Share your world and play with your friends without a server*
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  action = vanilla_button_visibility_requirements
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:e8daf4c5-51fa-445e-92d1-84b8c43156f61692902706587] = luna
+}
+
+customization {
+  slim = false
+  auto_skin = false
+  scale = 40
+  showname = false
+  follow_mouse = true
+  capeurl = http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933
+  action = custom_layout_element:fancymenu_customization_player_entity
+  actionid = 73a5aa0e-6f7a-4234-8ce8-245c085abf431676038478616
+  playername = ElocinDev
+  bodyrotationx = -41.25
+  bodyrotationy = -15.0
+  auto_cape = false
+  is_baby = false
+  height = 72
+  orientation = mid-centered
+  copy_client_player = true
+  headrotationy = 0.0
+  headrotationx = -41.25
+  skinurl = http://textures.minecraft.net/texture/8e0c00a3c8874e229b8226fdd175e67be7a0d34ab123622e6e5d23c6b7237496
+  crouching = false
+  x = -64
+  width = 24
+  parrot_left_shoulder = false
+  y = -65
+  parrot = false
+}
+
+customization {
+  path = fancymenu_data/textures/icons/settings.png
+  orientation = mid-centered
+  x = -98
+  width = 16
+  action = addtexture
+  actionid = 281403e2-2f3e-454b-9b70-ca3dc372149d1676115406433
+  y = 19
+  height = 16
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink;%btnaction_splitter_fm%openlink;https://lunapixel.studio/discord%btnaction_splitter_fm%
+  x = -126
+  width = 20
+  action = addbutton
+  actionid = 91e0688d-ae2c-4b83-a721-1052e14f57a01683297808988
+  y = 16
+  description = Join our discord!
+  label = 
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink;%btnaction_splitter_fm%openlink;https://github.com/LunaPixelStudios/Prominence/issues%btnaction_splitter_fm%
+  x = 106
+  width = 20
+  action = addbutton
+  actionid = f3f7decf-8943-49b0-ab12-cf061b339b491683297846680
+  y = 16
+  description = Report an Issue or Bug
+  label = 
+  height = 20
+}
+
+customization {
+  path = fancymenu_data/textures/icons/discord.png
+  orientation = mid-centered
+  x = -125
+  width = 17
+  action = addtexture
+  actionid = 81ad1273-a2d3-4730-b102-04c66fab97a41683297888020
+  y = 18
+  height = 17
+}
+
+customization {
+  path = fancymenu_data/textures/icons/issues.png
+  orientation = mid-centered
+  x = 108
+  width = 17
+  action = addtexture
+  actionid = 2545f4df-2673-460b-a98a-bfaab5559e1f1683298100305
+  y = 17
+  height = 17
+}
+

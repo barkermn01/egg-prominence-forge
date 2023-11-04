@@ -1,0 +1,12 @@
+{
+	"unlocked_by_default": true,
+	"exclusive_root": true,
+	"title": "Talent Tree",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "netherite_sword"
+		}
+	},
+	"background": "textures/block/deepslate_bricks.png"
+}
